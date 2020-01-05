@@ -36,6 +36,7 @@ h1, h2, h3 {
 	padding: 0 15px;
   border-radius: 0;
 	font-family: 'Questrial';
+	display: none;
 }
 
 #navbar {
@@ -72,6 +73,7 @@ h1, h2, h3 {
 	overflow: hidden;
 	text-align: center;
 	padding: 0;
+	display: none;
 }
 
 .jumbotron video {
