@@ -1,5 +1,5 @@
 var char = 0;
-var consoleText = 'Test';
+var consoleText = 'WE DID POOP\nWE DID POOP I TELL YOU';
 var typeSpeed = 75;
 
 function typeWriter() {
