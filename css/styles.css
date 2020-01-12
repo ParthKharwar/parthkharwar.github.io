@@ -82,18 +82,20 @@ h1, h2, h3 {
 }
 
 .container {
-	padding: 100px 100px;
+	padding: 50px 100px;
 }
 
 #name {
 	color: white;
-	font-size: 7vh;
+	font-size: 10vh;
 	font-family: 'Questrial';
 	text-align: center;
+	line-height: 12vh;
+	letter-spacing: 0.15vw;
 }
 
 #console {
-	padding-top: 40px;
+	padding-top: 10px;
 	margin: 0 10vw;
 	font-family: 'Consolas';
 	letter-spacing: 0.1vw;
