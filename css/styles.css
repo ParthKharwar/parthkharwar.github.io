@@ -1,16 +1,30 @@
-body  {
-	position: relative;
-  -webkit-user-select: none;
-  user-select: none;
-	background-color: black;
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/webfonts/JetBrainsMono-Regular.woff2') format('woff2'),
+    url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/ttf/JetBrainsMono-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-h1, h2, h3 {
-	display: none;
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/webfonts/JetBrainsMono-Thin.woff2') format('woff2'),
+    url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/ttf/JetBrainsMono-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
 }
 
-.scroll-fixer {
-  height: calc(100%+1px);
+* {
+  -webkit-font-feature-settings: "liga"on, "calt"on;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: 'JetBrains Mono';
+}
+
+:root {
+  --background-dark: #252527;
+  --hightlight-one: #48C2CB;
+  --highlight-two: #DD7C2D;
 }
 
 ::-webkit-scrollbar {
@@ -29,97 +43,16 @@ h1, h2, h3 {
   background: gray;
 }
 
-.navbar {
-  background-color: #0B0C10;
-	border: 0;
-  border-top: 0px;
-  margin-bottom: 0;
-	padding: 0 15px;
-  border-radius: 0;
-	font-family: 'Questrial';
-	display: none;
+.bg-dark {
+  background-color: var(--background-dark);
 }
 
-#navbar {
-	justify-content: flex-end;
-	letter-spacing: 0.4vh;
+.bg-highlight-two {
+  background-color: var(--highlight-two);
 }
 
-#navbar a {
-  color: white;
-  transition: 0.2s ease;
-	padding: 15px;
+.font-gb {
+  font-family: JetBrains Mono;
 }
 
-#navbar li:not(.active) a:hover {
-  background-color: white;
-  color: #48C2CB;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-#navbar a.active {
-  background-color: #42C2CB;
-	text-shadow: 0 0 1px rgba(255,255,255,1);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) inset, 0 6px 20px 0 rgba(0, 0, 0, 0.19) inset;
-}
-
-#navbar-button {
-	color: white;
-}
-
-.jumbotron {
-	height: 100vh;
-	background-color: #0B0C10;
-	border-radius: 0;
-	overflow: hidden;
-	text-align: center;
-	padding: 0;
-	display: none;
-}
-
-.jumbotron video {
-	height: 100%;
-}
-
-.container {
-	padding: 50px 75px;
-}
-
-#name {
-	color: white;
-	font-size: 10vh;
-	font-family: 'Questrial';
-	text-align: center;
-	line-height: 12vh;
-	letter-spacing: 0.15vw;
-}
-
-#console {
-	padding-top: 10px;
-	margin: 0 05vw;
-	font-family: 'Consolas';
-	letter-spacing: 0.1vw;
-	font-size: 2.5vh;
-	color: #BBB;
-}
-
-#loading {
-	font-family: 'Inconsolata';
-	letter-spacing: 0.25vw;
-	font-size: 5vh;
-	color: white;
-}
-
-@media only screen and (max-width: 768px) {
-	.jumbotron p {
-		font-size: 100vw;
-	}
-
-	.container {
-		padding: 70px 10px;
-	}
-
-	#console {
-		margin: 0;
-	}
-}
+@media only screen and (max-width: 768px) {}
