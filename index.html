@@ -11,23 +11,25 @@
 	<meta name="theme-color" content="#252527" />
 	<link rel="stylesheet" href="./css/styles.css" type="text/css">
 	<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Questrial&family=Roboto+Mono:wght@100;400;700&display=swap" rel="stylesheet">
 </head>
 
 <body class="bg-dark" id="warparth">
-	<div class="container bg-dark mx-auto grid place-items-center grid-cols-1 md:grid-cols-2" id="home-container">
-		<div class="flex justify-center items-center h-screen" id="name-title-container">
-			<div class="font-gb tracking-wider text-white text-7xl">
-				<p class="name font-thin" id="fname">PARTH_</p>
-				<p class="name font-bold" id="lname">KHARWAR</p>
+	<div class="container bg-dark mx-auto flex flex-col justify-center h-screen md:grid md:place-items-center md:grid-cols-2 px-2" id="home-container">
+		<div class="flex flex-col justify-center items-center md:h-screen my-2 md:my-0" id="name-title-container">
+			<div class="font-gb tracking-wider text-white text-6xl md:text-7xl my-5">
+				<p class="font-thin" id="fname">PARTH_</p>
+				<p class="font-bold" id="lname">KHARWAR</p>
+			</div>
+			<div class="my-5 text-white text-xl tracking-wide leading-5">
+				<p>Developer | Designer | Hooman</p>
 			</div>
 		</div>
-		<div class="flex flex-col justify-center items-center h-screen text-white text-3xl leading-relaxed text-left"
-			id="navigation-container">
-			<a class="hover:bg-yellow-600 transition delay-75 ease-in-out p-2" href="#">About</a>
-			<a class="hover:bg-yellow-600 transition delay-75 ease-in-out p-2" href="#">Resume</a>
-			<a class="hover:bg-yellow-600 transition delay-75 ease-in-out p-2" href="./media/Resume-Parth-Kharwar.pdf"
-				target="_blank">Portfolio</a>
+		<div class="flex flex-col justify-center items-center md:h-screen font-gb text-white text-3xl leading-relaxed text-left my-2 md:my-0" id="navigation-container">
+			<a class="m-1 py-1 px-6" href="#">About</a>
+			<a class="m-1 py-1 px-6" href="./media/Parth_Kharwar_Resume.pdf" target="_blank">Resume</a>
+			<a class="m-1 py-1 px-6" href="">Projects</a>
 		</div>
 	</div>
 </body>

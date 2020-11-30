@@ -14,13 +14,6 @@
   font-style: normal;
 }
 
-* {
-  -webkit-font-feature-settings: "liga"on, "calt"on;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  font-family: 'JetBrains Mono';
-}
-
 :root {
   --background-dark: #252527;
   --hightlight-one: #48C2CB;
@@ -52,7 +45,20 @@
 }
 
 .font-gb {
-  font-family: JetBrains Mono;
+  /* font-family: 'Roboto Mono'; */
+  font-family: 'JetBrains Mono';
+}
+
+.font-qt {
+  font-family: 'Questrial';
+}
+
+#navigation-container a {
+  transition: 0.15s ease-in;
+}
+
+#navigation-container a:hover {
+  background: var(--highlight-two)
 }
 
 @media only screen and (max-width: 768px) {}
