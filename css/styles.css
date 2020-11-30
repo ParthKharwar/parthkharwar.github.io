@@ -16,7 +16,7 @@
 
 :root {
   --background-dark: #252527;
-  --hightlight-one: #48C2CB;
+  --highlight-one: #48C2CB;
   --highlight-two: #DD7C2D;
 }
 
@@ -53,12 +53,28 @@
   font-family: 'Questrial';
 }
 
-#navigation-container a {
+#navigation-container>a {
   transition: 0.15s ease-in;
 }
 
-#navigation-container a:hover {
+#navigation-container>a:hover {
   background: var(--highlight-two)
+}
+
+#navigation-container svg {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  stroke-linejoin: round;
+  stroke-miterlimit: 2;
+}
+
+#navigation-container svg>path {
+  fill: white;
+  fill-rule: nonzero;
+}
+
+#navigation-container svg:hover>path {
+  fill: var(--highlight-two);
 }
 
 @media only screen and (max-width: 768px) {}
