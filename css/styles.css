@@ -16,8 +16,12 @@
 
 :root {
   --background-dark: #252527;
-  --highlight-one: #48C2CB;
-  --highlight-two: #DD7C2D;
+  --font-light: #FBFCFF;
+  --highlight-one: #F26419;
+  --highlight-two: #48C2CB;
+  --highlight-three: #DD7C2D;
+  --highlight-four: #FFB347;
+  --highlight-five: #F28123;
 }
 
 ::-webkit-scrollbar {
@@ -40,17 +44,18 @@
   background-color: var(--background-dark);
 }
 
-.bg-highlight-two {
-  background-color: var(--highlight-two);
+.bg-highlight-one {
+  background-color: var(--highlight-one);
 }
 
 .font-gb {
-  /* font-family: 'Roboto Mono'; */
   font-family: 'JetBrains Mono';
+  color: var(--font-light);
 }
 
 .font-qt {
   font-family: 'Questrial';
+  color: var(--font-light);
 }
 
 #navigation-container>a {
@@ -58,7 +63,7 @@
 }
 
 #navigation-container>a:hover {
-  background: var(--highlight-two)
+  background: var(--highlight-one)
 }
 
 #navigation-container svg {
@@ -74,7 +79,7 @@
 }
 
 #navigation-container svg:hover>path {
-  fill: var(--highlight-two);
+  fill: var(--highlight-one);
 }
 
 @media only screen and (max-width: 768px) {}
